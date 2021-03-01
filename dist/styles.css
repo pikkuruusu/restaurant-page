@@ -4,13 +4,14 @@ body, html {
 }
 
 body {
-    background-color: #171110;
+    background-color: #111;
     color: #eee;
 }
 
 #content {
     display: grid;
     grid-template-columns: minmax(15px, 1fr) minmax(290px, 800px) minmax(15px, 1fr);
+
 }
 
 header {
@@ -23,22 +24,59 @@ header {
     grid-column: 1 / 4;
     display: grid;
     grid-template-columns: minmax(15px, 1fr) minmax(290px, 800px) minmax(15px, 1fr);
-    grid-template-rows: 2fr 1fr 1fr;
+    grid-template-rows: 1fr auto;
     align-items: end;
+    border-bottom: 1px solid #bbb;
 }
 
 header h1 {
     grid-column: 2 / 3;
-    grid-row: 2 / 3;
+    grid-row: 1 / 2;
     margin: 0;
     align-self: end;
+    font-size: 3em;
 }
 
 nav {
     grid-column: 2 / 3;
-    grid-row: 3 / 4;
+    grid-row: 2 / 3;
+    margin-top: 20px;
 }
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    background-color:rgba(30, 30, 30, 0.8);
+    border-top: 1px solid #bbb;
+    border-right: 1px solid #bbb;
+    border-left: 1px solid #bbb;
+    padding: 5px 20px 5px 20px;
+    margin-right: 5px;
+    font-size: 1.5em;
+}
+
+@media screen and (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-right: 0px;
+    }
+}
+
 
 main {
     grid-column: 2 / 3;
+    padding-top: 20px;
+}
+
+footer {
+    grid-column: 2 / 3;
+    margin-top: 30px;
 }
