@@ -52,7 +52,7 @@ nav ul {
 
 .nav-btn {
     position: relative;
-    background-color:rgba(30, 30, 30, 0.8);
+    background-color:rgba(30, 30, 30, 0.7);
     border-top: 1px solid #444;
     border-right: 1px solid #444;
     border-left: 1px solid #444;
@@ -75,7 +75,6 @@ nav ul {
     border-right: 1px solid #bbb;
     border-left: 1px solid #bbb;
     border-bottom: 1px solid #111;
-    
 }
 
 @media screen and (max-width: 600px) {
@@ -85,6 +84,17 @@ nav ul {
 
     nav ul li {
         margin-right: 0px;
+    }
+
+    .nav-btn {
+        border-top: 1px solid #bbb;
+        border-right: 1px solid #bbb;
+        border-left: 1px solid #bbb;
+        border-bottom: 1px solid #bbb;
+    }
+
+    .nav-btn.nav-btn.active:hover {
+        background-color:rgba(238, 238,238, 0.18);
     }
 }
 
