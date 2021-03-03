@@ -30,6 +30,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./src/modules/footer.js":
+/*!*******************************!*\
+  !*** ./src/modules/footer.js ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nfunction loadFooter() {\n    const footer = document.createElement('footer');\n\n    const paragraph = document.createElement('p');\n    paragraph.textContent = 'This is a footer';\n\n    footer.appendChild(paragraph);\n\n    return footer;\n}\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (loadFooter);\n\n//# sourceURL=webpack://restaurant-page/./src/modules/footer.js?");
+
+/***/ }),
+
 /***/ "./src/modules/header.js":
 /*!*******************************!*\
   !*** ./src/modules/header.js ***!
@@ -56,7 +66,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./header */ \"./src/modules/header.js\");\n/* harmony import */ var _main__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./main */ \"./src/modules/main.js\");\n\n\n\nfunction loadPage() {\n    const contentContainer = document.getElementById('content');\n    \n    contentContainer.appendChild((0,_header__WEBPACK_IMPORTED_MODULE_0__.default)());\n    //Activate first tab\n    document.querySelector('#home-btn').classList.add('active');\n    \n    contentContainer.appendChild((0,_main__WEBPACK_IMPORTED_MODULE_1__.default)());\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (loadPage);\n\n//# sourceURL=webpack://restaurant-page/./src/modules/loadPage.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./header */ \"./src/modules/header.js\");\n/* harmony import */ var _main__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./main */ \"./src/modules/main.js\");\n/* harmony import */ var _footer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./footer */ \"./src/modules/footer.js\");\n\n\n\n\nfunction loadPage() {\n    const contentContainer = document.getElementById('content');\n    \n    contentContainer.appendChild((0,_header__WEBPACK_IMPORTED_MODULE_0__.default)());\n    //Activate first tab\n    document.querySelector('#home-btn').classList.add('active');\n    \n    contentContainer.appendChild((0,_main__WEBPACK_IMPORTED_MODULE_1__.default)());\n\n    contentContainer.appendChild((0,_footer__WEBPACK_IMPORTED_MODULE_2__.default)());\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (loadPage);\n\n//# sourceURL=webpack://restaurant-page/./src/modules/loadPage.js?");
 
 /***/ }),
 
