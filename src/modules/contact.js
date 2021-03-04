@@ -6,7 +6,7 @@ function loadContact() {
     contentElements.push(h2);
 
     const paragraphOne = document.createElement('p');
-    paragraphOne.textContent = 'Phone home'
+    paragraphOne.textContent = 'Phone: 555-1234567'
     contentElements.push(paragraphOne);
 
     const paragraphTwo = document.createElement('p');

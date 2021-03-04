@@ -6,11 +6,11 @@ function loadMenu() {
     contentElements.push(h2);
 
     const paragraphOne = document.createElement('p');
-    paragraphOne.textContent = 'Foods'
+    paragraphOne.textContent = 'Foods.'
     contentElements.push(paragraphOne);
 
     const paragraphTwo = document.createElement('p');
-    paragraphTwo.textContent = 'More foods'
+    paragraphTwo.textContent = 'We have it.'
     contentElements.push(paragraphTwo);
 
     return contentElements;
